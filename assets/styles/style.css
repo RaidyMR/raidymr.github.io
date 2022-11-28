@@ -101,14 +101,6 @@ main {
     padding: 1em;
 }
 
-#content {
-    width: 100%;
-}
-
-aside {
-    
-}
-
 .card {
     border-radius: 8px;
     padding: 16px;
@@ -124,7 +116,7 @@ aside {
     text-align: center;
 }
 
-/* project carousel */
+    /* project carousel */
 
 .project-container {
     display: flex;
@@ -202,7 +194,7 @@ footer {
 .theme-switch input { display:none; }
 
 .slider {
-  background-color: grey;
+  
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -227,3 +219,54 @@ input:checked + .slider { background-color: var(--dark-main-color); }
 input:checked + .slider:before { transform: translateX(26px); }
 .slider.round { border-radius: 34px; }
 .slider.round:before { border-radius: 50%; }
+
+
+/* PROJECT CAROUSEL */
+.carousel{
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden; /* <===  */
+    border-radius: 15px;
+    border: 2px solid #ccc;
+  }
+  
+  .slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+  .btn:active {
+    transform: scale(1.1);
+  }
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }
