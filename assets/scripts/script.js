@@ -1,23 +1,40 @@
 // DARK MODE
-const darkModeSlider = document.getElementById('dark-mode-slider');
 const header = document.getElementsByTagName('header');
 const footer = document.getElementsByTagName('footer');
 const contact = document.getElementsByClassName('contact');
 
-console.log(header)
-darkModeSlider.oninput = () => {
-    if(darkModeSlider.value == 0) {
-        document.body.classList.remove("dark-mode");
-        header[0].classList.remove('dark-header');
-        header[1].classList.remove('dark-header');
-        footer[0].classList.remove('dark-footer');
-    } else {
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    
+    if (currentTheme === 'dark') {
         document.body.classList.add("dark-mode");
         header[0].classList.add('dark-header');
         header[1].classList.add('dark-header');
         footer[0].classList.add('dark-footer');
+        toggleSwitch.checked = true;
     }
 }
+
+toggleSwitch.addEventListener('change', (e) => {
+    if (e.target.checked) {
+        document.body.classList.add("dark-mode");
+        header[0].classList.add('dark-header');
+        header[1].classList.add('dark-header');
+        footer[0].classList.add('dark-footer');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        
+        document.body.classList.remove("dark-mode");
+        header[0].classList.remove('dark-header');
+        header[1].classList.remove('dark-header');
+        footer[0].classList.remove('dark-footer');
+        localStorage.setItem('theme', 'light');
+    }    
+
+});
 
 // PICK RANDOM QUOTE
 const pickQuote = () => {
