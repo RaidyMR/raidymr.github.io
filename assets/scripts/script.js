@@ -2,11 +2,10 @@ const generateAboutPage = () => {
     return {
         title: 'Raidy Mustafid - About',
         content: `
-            <br>
-            <h2>Hi, I'm Raidy Mustafid</h2>
+            <h1>HI, I'M RAIDY MUSTAFID</h1>
             <p>A recent graduate from Pertamina University with a fervent enthusiasm for both learning and imparting knowledge, particularly in the realms of web programming and cybersecurity. Eager to embark on a journey of exploration and contribute meaningfully to these dynamic fields.</p>
-            <br>
-            <h2>Visit Me At:</h2>
+            
+            <h2>VISIT ME AT:</h2>
             <ul>
                 <li><a href="https://www.linkedin.com/in/raidy-mustafid-35a4a21a4/">
                     <img class="icons" src="./assets/images/icons/iconmonstr-linkedin-3.svg" alt="LinkedIn" width="50" height="50">

@@ -1,13 +1,16 @@
-:root {
-    --main-font: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root {
+    --main-font: 'Rubik', sans-serif;
+    --secondary-font: 'Roboto Flex', sans-serif;
+    
+    --light-headline-color: #0c0c0c;
+    --light-subheadline-color: #2b2b2b;
     /* --light-background-color: #fffffe;
     --light-highlight-color: #078080;
     --light-secondary-color: #f45d48;
     --light-tertiary-color: #f8f5f2;
     --light-card-color: #f8f5f2;
-    --light-headline-color: #232323;
-    --light-subheadline-color: #222525;
 
     --dark-background-color: #242629;
     --dark-highlight-color: #7f5af0;
@@ -22,17 +25,18 @@ body {
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     /* background-image: linear-gradient(120deg, #103975 0%, #242629 100%); */
 
-    font-family: var(--main-font);
     margin: 0;
     padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: var(--main-font);
     color: var(--light-headline-color);
     margin: 0;
 }
 
 p {
+    font-family: var(--secondary-font);
     color: var(--light-subheadline-color);
     margin: 0;
 }
@@ -67,28 +71,17 @@ main {
     /* margin: 0; */
 }
 
-.middle ul li .icons {
-    width: 2rem;
-    height: 2rem;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: var(--light-subheadline-color);
-    
-}
-
 .navbar img {
     width: 50px;
     height: 50px;
 }
 
 .navbar button {
-    font-size: 17px;
+    font: large var(--main-font);
     background: transparent;
     border: none;
     padding: 1em 1.5em;
-    color: #000;
+    color: var(--light-headline-color);
     text-transform: uppercase;
     position: relative;
     transition: 0.5s ease;
@@ -126,6 +119,11 @@ main {
     
     object-fit: cover;
     object-position: center;
+}
+
+.middle ul li .icons {
+    width: 2rem;
+    height: 2rem;
 }
 
 .bottom {
