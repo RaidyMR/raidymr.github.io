@@ -1,23 +1,33 @@
-
-
 const generateAboutPage = () => {
     return {
-        title: 'My Portfolio - About',
+        title: 'Raidy Mustafid - About',
         content: `
-            <h2>About Me</h2>
+            <br>
+            <h2>Hi, I'm Raidy Mustafid</h2>
             <p>A recent graduate from Pertamina University with a fervent enthusiasm for both learning and imparting knowledge, particularly in the realms of web programming and cybersecurity. Eager to embark on a journey of exploration and contribute meaningfully to these dynamic fields.</p>
+            <br>
+            <h2>Visit Me At:</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/raidy-mustafid-35a4a21a4/">
+                    <img class="icons" src="./assets/images/icons/iconmonstr-linkedin-3.svg" alt="LinkedIn" width="50" height="50">
+                </a></li>
+                <li><a href="https://github.com/RaidyMR">
+                    <img class="icons" src="./assets/images/icons/iconmonstr-github-1.svg" alt="GitHub" width="50" height="50">
+                </a></li>
+            </ul>
+
         `,
     }
 }
 
 const generateProjectsPage = () => {
     return {
-        title: 'My Portfolio - Projects',
+        title: 'Raidy Mustafid - Projects',
         content: `
             <h2>Personal & College Projects</h2>
             <div class="slide">
                 <a href="https://raidymr.github.io/tic-tac-toe/">
-                    <img src="./assets/images/project/tic-tac-toe.png">
+                    <img src="./assets/images/projects/tic-tac-toe.png">
                 </a>
             </div>
         `
@@ -26,8 +36,9 @@ const generateProjectsPage = () => {
 
 const generateCertificatesPage = () => {
     return {
-        title: 'My Portfolio - Certificates',
+        title: 'Raidy Mustafid - Certificates',
         content: `
+            <br><br>
             <h2>Certificates</h2>
             <p>Coming soon...</p>
             <p> Check my certificates on my LinkedIn profile: <a href="https://www.linkedin.com/in/raidy-mustafid-35a4a21a4/details/certifications/">Raidy Mustafid</a></p>
@@ -35,7 +46,7 @@ const generateCertificatesPage = () => {
     }
 }
 document.addEventListener("DOMContentLoaded", () => {
-    const mainContent = document.querySelector("#mainContent");
+    const mainContent = document.querySelector(".middle");
     const aboutButton = document.querySelector("#about");
     const projectsButton = document.querySelector("#projects");
     const certificatesButton = document.querySelector("#certificates");
