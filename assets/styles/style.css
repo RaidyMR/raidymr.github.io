@@ -68,7 +68,6 @@ main {
     text-decoration: none;
     gap: 0.5rem;
     padding: 0;
-    /* margin: 0; */
 }
 
 .navbar img {
@@ -76,33 +75,69 @@ main {
     height: 50px;
 }
 
-.navbar button {
-    font: large var(--main-font);
-    background: transparent;
-    border: none;
-    padding: 1em 1.5em;
-    color: var(--light-headline-color);
-    text-transform: uppercase;
+.btn2 {
     position: relative;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-
-.navbar button::before {
-    content: "";
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border: 2px solid #f6d365;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    font: large var(--main-font);
+    transition: 0.3s;
+  }
+  
+  .btn2::before {
+    content: '';
     position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: #f6d365;
-    transition: 0.5s ease;
-}
-
-.navbar button:hover::before {
-    width: 100%;
-}
-
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #fff;
+    transition: 0.3s ;
+    transform: scaleY(-1);
+  }
+  
+  .btn2::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #fff;
+    /* transition: 0.3s ease-out; */
+    transform: scaleY(1);
+  }
+  
+  .btn2:hover::before {
+    /* transform: translateY(-25px); */
+    height: 0;
+  }
+  
+  .btn2:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btn2:hover {
+    border-radius: 4px;
+    border: 2px solid #fda085;
+    background: #fda085;
+    color: #fff;
+  }
+  
+  .btn2 span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
 
 .middle {
     display: flex;
@@ -125,6 +160,58 @@ main {
     width: 2rem;
     height: 2rem;
 }
+
+
+#show-projects {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    position: relative;
+    display: inline-blocks;
+    text-transform: uppercase;
+    font: large var(--main-font);
+    letter-spacing: 0.05rem;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fda085;
+    color: #000;
+}
+
+#show-projects span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+#show-projects:hover span {
+    color: #fff ;
+}
+
+#show-projects::before,
+#show-projects::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#show-projects::before {
+    content: "";
+    background: #f6d365 ;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+#show-projects:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
 
 .bottom {
     text-align: center;

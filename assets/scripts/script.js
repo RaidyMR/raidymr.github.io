@@ -1,10 +1,16 @@
+function renderPage(page) {
+    document.querySelector(".middle").innerHTML = page.content;
+    document.title = page.title;
+}
+
 const generateAboutPage = () => {
     return {
         title: 'Raidy Mustafid - About',
         content: `
+            <br>
             <h1>HI, I'M RAIDY MUSTAFID</h1>
             <p>A recent graduate from Pertamina University with a fervent enthusiasm for both learning and imparting knowledge, particularly in the realms of web programming and cybersecurity. Eager to embark on a journey of exploration and contribute meaningfully to these dynamic fields.</p>
-            
+            <button onclick="renderPage(generateProjectsPage())" id="show-projects"><span>Check My Projects</span></button>
             <h2>VISIT ME AT:</h2>
             <ul>
                 <li><a href="https://www.linkedin.com/in/raidy-mustafid-35a4a21a4/">
@@ -40,20 +46,15 @@ const generateCertificatesPage = () => {
             <br><br>
             <h2>Certificates</h2>
             <p>Coming soon...</p>
-            <p> Check my certificates on my LinkedIn profile: <a href="https://www.linkedin.com/in/raidy-mustafid-35a4a21a4/details/certifications/">Raidy Mustafid</a></p>
+            <p> Check my certificates on my LinkedIn profile: <a href="https://www.linkedin.com/in/raidy-mustafid-35a4a21a4/">Raidy Mustafid</a></p>
         `
     }
 }
+
 document.addEventListener("DOMContentLoaded", () => {
-    const mainContent = document.querySelector(".middle");
     const aboutButton = document.querySelector("#about");
     const projectsButton = document.querySelector("#projects");
     const certificatesButton = document.querySelector("#certificates");
-    
-    function renderPage(page) {
-        mainContent.innerHTML = page.content;
-        document.title = page.title;
-    }
     
     aboutButton.addEventListener("click", () => {
         renderPage(generateAboutPage());
