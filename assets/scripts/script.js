@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
         renderPage(generateCertificatesPage());
     });
     
-    renderPage(generateAboutPage());
+    renderPage(generateProjectsPage());
     }
 );
