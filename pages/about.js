@@ -19,10 +19,10 @@ export function generateAboutPage(){
                 </a></li>
             </ul>
         `,
-        event: "click",
-        query: "#show-projects",
-        handler: () => {
-            renderPage(generateProjectsPage());
+        DOMSetup: function() {
+            document.getElementById('show-projects').addEventListener('click', function(){
+                renderPage(generateProjectsPage());
+            });
         }
     }
 }
