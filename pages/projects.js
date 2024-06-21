@@ -42,11 +42,14 @@ export function generateProjectsPage() {
                     <h2>Rock Paper Scissors</h2>
                   </div>
                   <div class="project-info">
-                    <p>Simple Rock Paper Scissors game made with HTML, CSS, and JavaScript</p>
+                    <p>
+                      I created a simple, fun and interactive Rock, Paper, Scissors game using basic HTML for structure, CSS for styling, and JavaScript for game logic, following the instructions from The Odin Project.
+                      The game is first to 5 rounds and the player can choose between Rock, Paper, or Scissors.
+                    </p>
                   </div>
                   <div class="buttons-info">
-                    <a href="#" class="btn-info source-code">Source Code</a>
-                    <a href="#" class="btn-info visit-site">Visit Site</a>
+                    <a href="https://github.com/RaidyMR/rock-paper-scissors" class="btn-info source-code">Source Code</a>
+                    <a href="https://raidymr.github.io/rock-paper-scissors/" class="btn-info visit-site">Visit Site</a>
                   </div>
                 </div>
                 <div class="card-info">
@@ -55,11 +58,13 @@ export function generateProjectsPage() {
                     <h2>Etch-a-Sketch</h2>
                   </div>
                   <div class="project-info">
-                    <p>Check this out</p>
+                    <p>
+                      For the Etch-a-Sketch project from The Odin Project, I created a dynamic web application using basic HTML and CSS to structure and style the interface, with features such as a color picker, adjustable grid size, erase capability, and clear functionality, all powered by JavaScript manipulating the DOM for seamless interactivity
+                    </p>
                   </div>
                   <div class="buttons-info">
-                    <a href="#" class="btn-info">Source Code</a>
-                    <a href="#" class="btn-info">Visit Site</a>
+                    <a href="https://github.com/RaidyMR/etch-a-sketch" class="btn-info">Source Code</a>
+                    <a href="https://raidymr.github.io/etch-a-sketch/" class="btn-info">Visit Site</a>
                   </div>
                 </div>
                 <div class="card-info">
@@ -68,11 +73,13 @@ export function generateProjectsPage() {
                     <h2>TicTacToe</h2>
                   </div>
                   <div class="project-info">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloremque? Aut officia perferendis dolores, quos eos tenetur ad autem minima sunt animi doloremque quisquam enim architecto ab pariatur nemo ipsum?</p>
+                    <p>
+                      For the TicTacToe project from The Odin Project, I designed a responsive web-based game using HTML for structure, CSS for styling, and JavaScript for functionality. The game offers options to restart, switch between 'X' and 'O', and includes two AI modes: a basic bot making random moves and a strategic AI employing the Minimax Algorithm, implemented using both prototype and class-based paradigms.
+                    </p>
                   </div>
                   <div class="buttons-info">
-                    <a href="#" class="btn-info">Source Code</a>
-                    <a href="#" class="btn-info">Visit Site</a>
+                    <a href="https://github.com/RaidyMR/tictactoe" class="btn-info">Source Code</a>
+                    <a href="https://raidymr.github.io/tictactoe/" class="btn-info">Visit Site</a>
                   </div>
                 </div>
               </div>
