@@ -1,4 +1,5 @@
 let slideIndex = 1;
+let certificatesIndex = 1;
 
 function moveSlide(n) {
     showSlides(slideIndex += n);
@@ -24,17 +25,33 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
+function moveCertificateSlide(n) {
+    certificateSlides(certificatesIndex += n);
+}
+
+function certificateSlides(n) {
+    const cards = document.querySelectorAll(".card");
+    
+    if (n > cards.length) {certificatesIndex = 1}
+    if (n < 1) {certificatesIndex = cards.length}
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].style.display = "none";
+    }
+
+    cards[certificatesIndex-1].style.display = "block";
+}
+
+
 function renderPage(page) {
     document.querySelector(".middle").innerHTML = page.content;
     document.title = page.title;
-    
-    if (page.DOMSetup) {
-        page.DOMSetup();
-    }
+    page.DOMSetup();
 }
 
 export {
     renderPage,
     moveSlide,
-    showSlides
+    showSlides,
+    moveCertificateSlide,
+    certificateSlides
 }

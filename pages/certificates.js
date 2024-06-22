@@ -1,11 +1,49 @@
+import { moveCertificateSlide, certificateSlides } from "../assets/scripts/utils.js";
+
 export function generateCertificatesPage() {
     return {
         title: 'Raidy Mustafid - Certificates',
         content: `
-            <br><br>
+            
             <h2>Certificates</h2>
-            <p>Coming soon...</p>
-            <p> Check my certificates on my LinkedIn profile: <a href="https://www.linkedin.com/in/raidy-mustafid-35a4a21a4/">Raidy Mustafid</a></p>
-        `
+            <div class="slider">
+              <div class="card">
+                <img src="../assets/images/certificates/sertifikat_course_163_1145124_190922200923-1.jpg" alt="Certificate" class="card__image">
+                <div class="card__content">
+                  <p class="card__title">Project Name</p>
+                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  <button class="card__button">Live Demo</button>
+                  <button class="card__button secondary">Source Code</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../assets/images/certificates/sertifikat_course_237_1145124_010922092557-1.jpg" alt="Certificate" class="card__image">
+                <div class="card__content">
+                  <p class="card__title">Project Name</p>
+                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  <button class="card__button">Live Demo</button>
+                  <button class="card__button secondary">Source Code</button>
+                </div>
+              </div>
+
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>    
+            </div>
+        `,
+        DOMSetup: function() {
+          const prev = document.querySelector('.prev');
+          const next = document.querySelector('.next');
+
+          prev.addEventListener('click', function() {
+              moveCertificateSlide(-1);
+          });
+
+          next.addEventListener('click', function() {
+              moveCertificateSlide(1);
+          });
+
+          certificateSlides(1);
+      }
     }
+    
 }
