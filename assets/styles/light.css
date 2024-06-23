@@ -64,20 +64,20 @@ main {
     color: var(--light-headline-color);
 }
 
-.certificate-card {
+.certificate-slide {
     border: var(--dark-secondary-card-color) 5px solid;
 }
 
-.certificate-card__content {
+.certificate-slide__content {
     background: var(--light-secondary-card-color);
 }
 
-.certificate-card__button {
+.certificate-slide__button {
     background: var(--light-primary-color);
     color: var(--dark-headline-color);
 }
 
-.certificate-card__button:hover {
+.certificate-slide__button:hover {
     background: var(--light-secondary-color);
     color: var(--light-headline-color);
 }

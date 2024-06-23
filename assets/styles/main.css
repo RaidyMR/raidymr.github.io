@@ -345,7 +345,7 @@ button {
 
 
 /* CERTIFICATE PAGE */
-.certificate-card {
+.certificate-slide {
     position: relative;
     aspect-ratio: 16/9;
     border-radius: 1rem;
@@ -357,11 +357,11 @@ button {
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.certificate-card:hover {
+.certificate-slide:hover {
     transform: scale(1.05);
 }
 
-.certificate-card__content {
+.certificate-slide__content {
     position: absolute;
     top: 0;
     left: 0;
@@ -373,20 +373,20 @@ button {
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.certificate-card:hover .certificate-card__content {
+.certificate-slide:hover .certificate-slide__content {
     transform: rotateX(0deg);
 }
 
-.certificate-card__title {
+.certificate-slide__title {
     margin: 0;
     font-size: 20px;
 }
 
-.certificate-card__description {
+.certificate-slide__description {
     margin: 10px 0;
 }
 
-.certificate-card__button {
+.certificate-slide__button {
     padding: 1rem;
     border-radius: 8px;
     border: none;
@@ -396,7 +396,7 @@ button {
     position: relative;
 }
 
-.certificate-card img {
+.certificate-slide img {
     object-fit: cover;
     object-position: center;
     margin: 0 auto;

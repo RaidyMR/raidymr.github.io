@@ -1,4 +1,4 @@
-import { showSlides, moveSlide } from "../assets/scripts/utils.js";
+import { showSlides } from "../assets/scripts/utils.js";
 
 export function generateProjectsPage() {
     return {
@@ -90,23 +90,27 @@ export function generateProjectsPage() {
         DOMSetup: function() {
             const prev = document.querySelector('.prev');
             const next = document.querySelector('.next');
+            const slides = document.getElementsByClassName("image-slide");
+            const infos = document.getElementsByClassName("card-info");
             const dots = document.querySelectorAll('.demo');
+            let slideIndex = 1;
 
             prev.addEventListener('click', function() {
-                moveSlide(-1);
+                slideIndex = showSlides(slideIndex - 1, {slides, infos, dots});
             });
 
             next.addEventListener('click', function() {
-                moveSlide(1);
+                slideIndex = showSlides(slideIndex + 1, {slides, infos, dots});
+                console.log("next")
             });
 
             dots.forEach((dot, index) => {
                 dot.addEventListener('click', function() {
-                    showSlides(index + 1);
+                    slideIndex = showSlides(index + 1, {slides, infos, dots});
                 });
             });
 
-            showSlides(1);
+            slideIndex = showSlides(slideIndex, {slides, infos, dots});
         }
     }
 }
