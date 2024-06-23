@@ -6,7 +6,7 @@ function moveSlide(n) {
 }
 
 function showSlides(n) {
-    const slides = document.getElementsByClassName("mySlides");
+    const slides = document.getElementsByClassName("image-slide");
     const infos = document.getElementsByClassName("card-info");
     const dots = document.getElementsByClassName("demo");
 
@@ -30,7 +30,7 @@ function moveCertificateSlide(n) {
 }
 
 function certificateSlides(n) {
-    const cards = document.querySelectorAll(".card");
+    const cards = document.querySelectorAll(".certificate-card");
     
     if (n > cards.length) {certificatesIndex = 1}
     if (n < 1) {certificatesIndex = cards.length}
@@ -43,7 +43,6 @@ function certificateSlides(n) {
 
 function toggleDarkMode() {
     localStorage.getItem("darkmode") == "enabled" ? localStorage.setItem("darkmode", "disabled") : localStorage.setItem("darkmode", "enabled");
-
     showDarkMode();
 }
 

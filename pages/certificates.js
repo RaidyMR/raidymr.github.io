@@ -6,23 +6,21 @@ export function generateCertificatesPage() {
         content: `
             
             <h2>Certificates</h2>
-            <div class="slider">
-              <div class="card">
+            <div class="certificate-slider">
+              <div class="certificate-card">
                 <img src="../assets/images/certificates/sertifikat_course_163_1145124_190922200923-1.jpg" alt="Certificate" class="card__image">
-                <div class="card__content">
-                  <p class="card__title">Project Name</p>
-                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                  <button class="card__button">Live Demo</button>
-                  <button class="card__button secondary">Source Code</button>
+                <div class="certificate-card__content">
+                  <p class="certificate-card__title">Project Name</p>
+                  <p class="certificate-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  <button class="certificate-card__button">View Certificate</button>
                 </div>
               </div>
-              <div class="card">
-                <img src="../assets/images/certificates/sertifikat_course_237_1145124_010922092557-1.jpg" alt="Certificate" class="card__image">
-                <div class="card__content">
-                  <p class="card__title">Project Name</p>
-                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                  <button class="card__button">Live Demo</button>
-                  <button class="card__button secondary">Source Code</button>
+              <div class="certificate-card">
+                <img src="../assets/images/certificates/sertifikat_course_237_1145124_010922092557-1.jpg" alt="Certificate" class="certificate-card__image">
+                <div class="certificate-card__content">
+                  <p class="certificate-card__title">Project Name</p>
+                  <p class="certificate-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  <button class="certificate-card__button">View Certificate</button>
                 </div>
               </div>
 

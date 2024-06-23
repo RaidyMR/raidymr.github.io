@@ -1,5 +1,87 @@
 body {
     background-image: var(--light-background-color);
-    margin: 0;
-    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-headline-color);
+}
+
+p {
+    color: var(--dark-subheadline-color);
+}
+
+main {
+    background-color: var(--light-primary-card-color);
+}
+
+.btn2 {
+    border: 2px solid var(--light-primary-color);
+    color: var(--dark-headline-color);
+}
+
+.btn2::before {
+    background-color: var(--light-primary-card-color);
+}
+
+.btn2:hover {
+    border: 2px solid var(--light-secondary-color);
+    background: var(--light-secondary-color);
+    color: var(--light-headline-color);
+}
+
+#show-projects {
+    background: var(--light-secondary-color);
+    color: var(--dark-headline-color);
+}
+
+#show-projects::before {
+    background: var(--light-primary-color);
+}
+
+#show-projects:hover span {
+    color: var(--light-headline-color);
+}
+
+.image-slide img {
+    background: var(--light-background-color);
+}
+
+.card-container {
+    background: var(--light-background-color);
+}
+
+.card-info {
+    background: var(--light-secondary-card-color);
+}
+
+.btn-info {
+    background: var(--light-primary-color);
+    color: var(--dark-headline-color);
+}
+
+.btn-info:hover {
+    background: var(--light-secondary-color);
+    color: var(--light-headline-color);
+}
+
+.certificate-card {
+    border: var(--dark-secondary-card-color) 5px solid;
+}
+
+.certificate-card__content {
+    background: var(--light-secondary-card-color);
+}
+
+.certificate-card__button {
+    background: var(--light-primary-color);
+    color: var(--dark-headline-color);
+}
+
+.certificate-card__button:hover {
+    background: var(--light-secondary-color);
+    color: var(--light-headline-color);
+}
+
+.icons {
+    color: var(--dark-headline-color);
 }

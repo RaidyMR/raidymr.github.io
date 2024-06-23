@@ -5,17 +5,17 @@ export function generateProjectsPage() {
         title: 'Raidy Mustafid - Projects',
         content: `
             <h2>Personal & College Projects</h2>
-          <div class="container">
+          <div class="project-container">
             <div class="projects">
               <div class="image-container">
                 <div class="images">
-                  <div class="mySlides">
+                  <div class="image-slide">
                       <img src="./assets/images/projects/rock-paper-scissors.png">
                   </div>
-                  <div class="mySlides">
+                  <div class="image-slide">
                     <img src="./assets/images/projects/etch-a-sketch.png">
                   </div>
-                  <div class="mySlides">
+                  <div class="image-slide">
                     <img src="./assets/images/projects/tic-tac-toe.png">
                   </div>
                   <a class="prev">&#10094;</a>
@@ -25,6 +25,7 @@ export function generateProjectsPage() {
                   <div class="column">
                     <img class="demo cursor" src="./assets/images/projects/rock-paper-scissors.png" style="width:100%" alt="Rock Paper Scissors">
                   </div>
+
                   <div class="column">
                     <img class="demo cursor" src="./assets/images/projects/etch-a-sketch.png" style="width:100%" alt="Etch-a-Sketch">
                   </div>
@@ -38,7 +39,7 @@ export function generateProjectsPage() {
               <div class="card-container">
                 <div class="card-info">
                   <div class="title-info"">
-                    <img src="./assets/images/icons/information-box.svg" alt="info">
+                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="24" height"24" viewBox="0 0 24 24"><path d="M5 3H19C20.1 3 21 3.89 21 5V19C21 19.53 20.79 20.04 20.41 20.41C20.04 20.79 19.53 21 19 21H5C4.47 21 3.96 20.79 3.59 20.41C3.21 20.04 3 19.53 3 19V5C3 3.89 3.89 3 5 3M13 9V7H11V9H13M13 17V11H11V17H13Z" /></svg>
                     <h2>Rock Paper Scissors</h2>
                   </div>
                   <div class="project-info">
@@ -54,7 +55,7 @@ export function generateProjectsPage() {
                 </div>
                 <div class="card-info">
                   <div class="title-info">
-                    <img src="./assets/images/icons/information-box.svg" alt="info">
+                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="24" height"24" viewBox="0 0 24 24"><path d="M5 3H19C20.1 3 21 3.89 21 5V19C21 19.53 20.79 20.04 20.41 20.41C20.04 20.79 19.53 21 19 21H5C4.47 21 3.96 20.79 3.59 20.41C3.21 20.04 3 19.53 3 19V5C3 3.89 3.89 3 5 3M13 9V7H11V9H13M13 17V11H11V17H13Z" /></svg>
                     <h2>Etch-a-Sketch</h2>
                   </div>
                   <div class="project-info">
@@ -69,7 +70,7 @@ export function generateProjectsPage() {
                 </div>
                 <div class="card-info">
                   <div class="title-info"">
-                    <img src="./assets/images/icons/information-box.svg" alt="info">
+                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="24" height"24" viewBox="0 0 24 24"><path d="M5 3H19C20.1 3 21 3.89 21 5V19C21 19.53 20.79 20.04 20.41 20.41C20.04 20.79 19.53 21 19 21H5C4.47 21 3.96 20.79 3.59 20.41C3.21 20.04 3 19.53 3 19V5C3 3.89 3.89 3 5 3M13 9V7H11V9H13M13 17V11H11V17H13Z" /></svg>
                     <h2>TicTacToe</h2>
                   </div>
                   <div class="project-info">
