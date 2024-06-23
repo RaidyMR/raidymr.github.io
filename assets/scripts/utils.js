@@ -41,6 +41,24 @@ function certificateSlides(n) {
     cards[certificatesIndex-1].style.display = "block";
 }
 
+function toggleDarkMode() {
+    localStorage.getItem("darkmode") == "enabled" ? localStorage.setItem("darkmode", "disabled") : localStorage.setItem("darkmode", "enabled");
+
+    showDarkMode();
+}
+
+function showDarkMode() {
+    if(localStorage.getItem("darkmode") == "enabled") {
+        document.getElementById("dark").media = '';
+        document.getElementById("light").media = 'none';
+        document.getElementsByClassName("theme-switch__checkbox")[0].checked = true;
+    } else {
+        document.getElementById("dark").media = 'none';
+        document.getElementById("light").media = '';
+        document.getElementsByClassName("theme-switch__checkbox")[0].checked = false;
+    }
+}
+
 
 function renderPage(page) {
     document.querySelector(".middle").innerHTML = page.content;
@@ -49,9 +67,11 @@ function renderPage(page) {
 }
 
 export {
-    renderPage,
     moveSlide,
     showSlides,
     moveCertificateSlide,
-    certificateSlides
+    certificateSlides,
+    renderPage,
+    toggleDarkMode,
+    showDarkMode
 }

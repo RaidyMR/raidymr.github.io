@@ -18,8 +18,8 @@ export function generateProjectsPage() {
                   <div class="mySlides">
                     <img src="./assets/images/projects/tic-tac-toe.png">
                   </div>
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>    
+                  <a class="prev">&#10094;</a>
+                  <a class="next">&#10095;</a>    
                 </div>
                 <div class="row">
                   <div class="column">
